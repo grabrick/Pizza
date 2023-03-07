@@ -23,6 +23,8 @@
 }
 
 .header__container {
+    width: 350px;
+    height: 100px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -94,10 +96,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .header__cart_logo {
     width: 23px;
     height: 23px;
     margin: 0 5px 0 15px;
+}
+
+.header__navlink {
+    text-decoration: none;
 }

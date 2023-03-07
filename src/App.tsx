@@ -1,14 +1,15 @@
+import { FC } from 'react';
 import './App.css';
-import Categories from './components/Categories/Categories';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+import useRoutes from './routes';
 
-function App() {
+const App: FC = () => {
+  const router = useRoutes()
+
   return (
     <div className="App">
-      <Header />
-      <Categories />
-      <Main />
+      {
+        router
+      }
     </div>
   );
 }
